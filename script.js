@@ -50,3 +50,34 @@ const quiz = [
   },
 ];
 
+// Define global variables
+let currentQuestion = 0;
+let timeLeft = 75;
+let score = 0;
+
+// Event listener for start button
+startButton.addEventListener("click", startQuiz);
+
+// Function to start quiz
+function startQuiz() {
+  // Hide start button
+  startButton.style.display = "none";
+
+  // Show quiz container
+  quizContainer.style.display = "block";
+
+  // Start timer
+  const timer = setInterval(() => {
+    timeLeft--;
+    timeLeftElement.textContent = timeLeft;
+
+    if (timeLeft === 0) {
+      clearInterval(timer);
+      endQuiz();
+    }
+  }, 1000);
+
+  // Display first question
+  displayQuestion();
+}
+

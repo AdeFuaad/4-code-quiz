@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  #quiz {
+    display: none;
+  }
+  
+  #timer {
+    font-size: 1.2em;
+    margin-top: 10px;
+  }
+  
+  #game-over {
+    display: none;
+  }
+  
+  label {
+    margin-right: 10px;
+  }
+  
+  input[type="text"] {
+    text-transform: uppercase;
+  }
+
+  
+
+
+
+
+
+
+ 

@@ -1,40 +1,104 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #2c3e50;
+    color: #ffffff;
   }
   
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
+  .container {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
   }
   
-  #quiz {
+  h1 {
+    color: #f1c40f;
+    margin-bottom: 2rem;
+  }
+  
+  button {
+    background-color: #3498db;
+    border: none;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  .hidden {
     display: none;
+  }
+  
+  .btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  #results-container p {
+    font-size: 1.2rem;
+  }
+  
+  #initials-form {
+    display: inline-grid;
+    gap: 0.5rem;
+  }
+  
+  input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    color: #333333;
+    background-color: #ffffff;
   }
   
   #timer {
-    font-size: 1.2em;
-    margin-top: 10px;
-  }
-  
-  #game-over {
-    display: none;
-  }
-  
-  label {
-    margin-right: 10px;
-  }
-  
-  input[type="text"] {
-    text-transform: uppercase;
+    background-color: #f39c12;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
   }
 
+  /* Add this to your existing styles.css file */
+
+/* High Scores page */
+.highscores-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
   
-
-
-
-
-
-
- 
+  #highscores-list {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    max-width: 300px;
+    text-align: left;
+  }
+  
+  #highscores-list li {
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    background-color: #f39c12;
+    color: #ffffff;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+  }
+  
+  #clear-btn,
+  #back-btn {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 1rem;
+  }
+  
